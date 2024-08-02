@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>ViniciusPC Survey</title>
+</head>
+<body>
+  <h1 id="title">ViniciusPC Survey</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form action="" id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">
+        Name: <input type="text" name="name" id="name" required placeholder="Name">
+      </label>
+      <label for="email" id="email-label">
+        Email: <input type="email" name="email" id="email" required placeholder="Email">
+      </label>
+      <label for="number" id="number-label">Age (optional): 
+        <input type="number" name="number" id="number" placeholder="Age" min="13" max="120">
+      </label>
+      <label for="dropdown">
+        Which option best describe your current role?
+        <select name="dropdown" id="dropdown">
+          <option value="">Select a Current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full time job</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Would you recommend ViniciusPC to a friend?</legend>
+      <label for="recommend-definitely">
+        <input type="radio" name="recommend" id="recommend-definitely" value="1" class="inline">Definitely
+      </label>
+      <label for="recommend-definitely">
+        <input type="radio" name="recommend" id="recommend" value="2" class="inline"> Maybe
+      </label>
+      <label for="recommend-definitely">
+        <input type="radio" name="recommend" id="recommend" value="3" class="inline"> Not Sure
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend> What would you like to see improved? (Check all that apply) </legend>
+      <label for="improve-frontend">
+        <input type="checkbox" name="improve-frontend" id="" value="1" class="inline"> Front-end Projects
+      </label>
+      <label for="improve-backend">
+        <input type="checkbox" name="improve-backend" id="" value="2" class="inline"> Back-end Projects
+      </label>
+      <label for="improve-datavisualization">
+        <input type="checkbox" name="improve-datavisualization" id="" value="3" class="inline"> Data Visualization
+      </label>
+      <label for="improve-challenges">
+        <input type="checkbox" name="improve-challenges" id="" value="4" class="inline"> Challanges
+      </label>
+      <label for="improve-videos">
+        <input type="checkbox" name="improve-videos" id="" value="5" class="inline"> Videos
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Any comments or Suggestions?</legend>
+      <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+    </fieldset>
+    <input type="submit" value="Submit" id="submit">
+  </form>
+</body>
+</html>
