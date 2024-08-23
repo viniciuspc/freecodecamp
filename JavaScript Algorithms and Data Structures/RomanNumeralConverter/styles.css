@@ -1,0 +1,65 @@
+:root {
+  --light-grey: #d1d1d1;   /* Softer light grey for text on dark background */
+  --dark-blue: #1a1a2e;    /* Darker shade of blue for more contrast */
+  --fcc-blue: #16213e;     /* Slightly darker blue for background */
+  --light-yellow: #ffcc00; /* More vibrant yellow for buttons */
+  --dark-yellow: #ffaa00;  /* Darker shade of yellow for borders */
+  --accent-purple: #6a1b9a; /* New accent color for highlights or links */
+  --dark-grey: #2e2e2e;    /* New dark grey for additional elements */
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  background-color: var(--fcc-blue);
+  color: var(--light-grey);
+}
+
+h1 {
+  text-align: center;
+  color: var(--light-yellow); /* Adding color for headings to stand out */
+}
+
+.container {
+  width: 90%;
+  max-width: 680px;
+}
+
+.container-input {
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+.container {
+  margin: 20px auto;
+}
+
+button {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--light-yellow);
+  border: 2px solid var(--dark-yellow);
+  margin-left: 5px; /*Give a space between input and button*/
+  color: var(--dark-blue); /* Ensures the text inside buttons is readable */
+}
+
+button,
+input {
+  min-height: 24px;
+  color: var(--dark-grey); /* Use dark grey for input text to differentiate */
+  margin-bottom: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.output {
+  border: 2px solid var(--accent-purple); /* Accent color for output box */
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: var(--dark-blue); /* Background color for output box */
+}
